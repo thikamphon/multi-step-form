@@ -1,0 +1,207 @@
+/* max-width 767px  portrait and landscape*/
+/* min-width 767px and max-width:1023px portrait and landscape*/
+/* min-width 1024px and max-width:1439 portrait and landscape*/
+/* max-width:1440 portrait and landscape*/
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+    .containerA {
+        gap: 2em;
+        padding-right: 2em;
+    }
+    .containerA {
+        padding-right: 2em;
+        gap: 2em;
+        width: 90%;
+        grid-template-columns: 30% auto;
+    }
+    .containerC{
+        padding-top: 2em;
+        padding-left: 2em;
+        background-size: cover;
+    }
+    .description h3{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .containerA {
+        padding-right: 2em;
+        gap: 2em;
+        width: 90%;
+        grid-template-columns: 35% auto;
+        height: 550px;
+    }
+    .containerC {
+        padding-left: 2em;
+        background-size: cover;
+    }
+    .container-grid{
+        grid-template-columns: 50px auto;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .containerA {
+        position: absolute;
+        top: unset;
+        right: unset;
+        transform: unset;
+        display: grid;
+        grid-template-columns: auto;
+        max-height: unset;
+        background-color: unset;
+        box-shadow: unset;
+        padding: unset;
+        border-radius: unset;
+        height: 100%;
+    }
+
+    .containerC {
+        background-image: url(./assets/images/bg-sidebar-mobile.svg);
+        position: absolute;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        right: 50%;
+        transform: translate(50%);
+        padding: unset;
+        padding-top: 2em;
+        padding-bottom: 5em;
+        background-position: bottom 15% right;
+        border-radius: 0;
+    }
+
+    .container-grid {
+        display: inline-flex;
+        padding: 10px;
+    }
+
+    div .description {
+        display: none;
+    }
+
+    .containerB {
+        position: relative;
+        margin-top: 5em;
+        padding-bottom: unset;
+    }
+
+    .container-info,
+    .selectPlan,
+    .addOns,
+    .summary,
+    .thanks {
+        padding: 2em;
+        margin: 1em;
+        border-radius: 10px;
+        background-color: var(--White);
+        box-shadow: -1px 15px 20px 0px rgb(171 179 231 / 32%);
+    }
+
+    .nextStep {
+        right: 1em;
+    }
+
+    .goBack {
+        left: 1em;
+    }
+
+    .container-plan {
+        grid-template-columns: 100%;
+        row-gap: 1em;
+    }
+
+    .plan-box {
+        grid-template-columns: 40px auto;
+        align-items: center;
+        gap: 1em;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .plan-box:hover {
+        transform: scale(1);
+    }
+
+    .card-add-on {
+        grid-template-columns: auto auto;
+        padding-left: 4em;
+    }
+
+    .card-add-on label h4 {
+        font-size: 16px;
+    }
+
+    .card-add-on label p {
+        font-size: 13px;
+
+    }
+
+    .card-add-on span {
+        font-size: 14px;
+    }
+
+    input[type="checkbox"]:after {
+        font-size: 8px;
+        width: 18px;
+        height: 18px;
+    }
+
+    input[type="checkbox"]:hover {
+        transform: scale(1);
+        border: 1px solid var(--Purplishblue);
+    }
+
+    .card-add-on:hover {
+        transform: scale(1);
+    }
+
+    .details h3 {
+        font-size: 20px;
+    }
+
+    .thanks {
+        bottom: unset;
+        position: unset;
+        transform: unset;
+    }
+
+    .thanks h2 {
+        font-size: 24px;
+    }
+
+    .thanks p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .switch {
+        width: 38px;
+        height: 22px;
+    }
+
+    .slider:before {
+        height: 14px;
+        width: 14px;
+    }
+
+    .container-switch {
+        column-gap: 1em;
+    }
+
+    .container-switch input:checked+.slider:before {
+        -webkit-transform: translateX(16px);
+        -ms-transform: translateX(16px);
+        transform: translateX(16px);
+    }
+}

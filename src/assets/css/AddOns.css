@@ -1,0 +1,87 @@
+.addOns h1 {
+    color: var(--Marineblue);
+}
+
+.addOns p {
+    color: var(--Coolgray);
+}
+
+.card-add-on {
+    display: grid;
+    grid-template-columns: auto 6em;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 6em;
+    position: relative;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.card-add-on span {
+    text-align: left;
+}
+
+.card-add-on input[type="checkbox"] {
+    -webkit-appearance: none;
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    border: 1px solid var(--Lightgray);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:after {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    top: 50%;
+    left: 2.5em;
+    color: #e2e6f3;
+    border: 1px solid var(--Lightgray);
+    transform: translateY(-50%);
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"]:checked {
+    border: 1px solid var(--Purplishblue);
+    background-color: hsla(242, 100%, 86%, 0.25);
+}
+
+input[type="checkbox"]:checked:after {
+    content: url(../images/icon-checkmark.svg);
+    background-color: var(--Purplishblue);
+}
+
+input[type="checkbox"]:hover {
+    transform: scale(1.02);
+    border: 1px solid var(--Purplishblue);
+}
+
+.card-add-on:hover {
+    transform: scale(1.02);
+}
+
+.card-add-on span {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Purplishblue);
+}
+
+.card-add-on label {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--Marineblue);
+}
+
+.card-add-on label p {
+    font-size: 16px;
+    font-weight: 400;
+}

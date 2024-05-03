@@ -1,0 +1,20 @@
+.thanks{
+    text-align: center;
+    bottom: 50%;
+    position: absolute;
+    transform: translateY(50%);
+}
+
+.thanks h2{
+    font-size: 38px;
+    font-weight: 800;
+    margin-top: .7em;
+    margin-bottom: 15px;
+    color: var(--Marineblue);
+}
+
+.thanks p{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--Coolgray);
+}

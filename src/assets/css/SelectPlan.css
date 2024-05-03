@@ -1,0 +1,131 @@
+.selectPlan h1 {
+    color: var(--Marineblue);
+}
+
+.selectPlan p {
+    color: var(--Coolgray);
+}
+
+.container-plan {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    margin-block: 2em;
+}
+
+.plan-box {
+    width: 150px;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid var(--Lightgray);
+    padding: 1em;
+    display: grid;
+    row-gap: 3em;
+    align-content: space-between;
+}
+
+.plan-box img{
+    z-index: 999;
+}
+
+.plan-box input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+
+.plan-box:hover {
+    transform: scale(1.05);
+}
+
+.plan-box input[type="radio"]:checked {
+    z-index: -1;
+    border: 1px solid var(--Purplishblue);
+    background-color:  hsla(242, 100%, 86%, 0.25);
+}
+
+.plan-box h4 {
+    color: var(--Marineblue);
+}
+
+.plan-box .free-promotion {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--Marineblue);
+}
+
+.container-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2em;
+    background: hsla(229, 24%, 87%, 0.483);
+    padding: .7rem;
+    border-radius: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--Marineblue);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.container-switch input:checked+.slider {
+    background-color: var(--Marineblue);
+}
+
+.container-switch input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.container-switch .selecte-yearly {
+    color: var(--Marineblue);
+    font-weight: 600;
+}

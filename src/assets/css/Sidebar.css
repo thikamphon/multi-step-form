@@ -1,0 +1,49 @@
+.containerC {
+    position: relative;
+    background-image: url(../images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    border-radius: 20px;
+    padding-left: clamp(1em,3vw,3em);
+    padding-top: 3em;
+    color: var(--White);
+}
+
+span {
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 50px auto;
+    justify-content: unset;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.step-rounded {
+    border: 1px solid var(--Magnolia);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: larger;
+    font-weight: 800;
+}
+
+.selected {
+    background-color: var(--Lightblue);
+    color: var(--Marineblue);
+    border: 1px solid var(--Lightblue);
+}
+
+.hide{
+    display: none;
+}

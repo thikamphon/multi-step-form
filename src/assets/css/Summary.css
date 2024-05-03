@@ -1,0 +1,72 @@
+.summary h1 {
+    color: var(--Marineblue);
+}
+
+.summary p {
+    color: var(--Coolgray);
+}
+
+.container-summary {
+    margin-block: 2em;
+}
+
+.container-detail {
+    background-color: var(--Magnolia);
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+.detail-plan {
+    display: grid;
+    grid-template-columns: auto 5em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail-plan p,
+.detail-plan h4 {
+    font-size: 18px;
+    font-weight: bolder;
+    color: var(--Marineblue);
+}
+
+.plan-price {
+    text-align: right;
+}
+
+.detail-plan a {
+    color: var(--Coolgray);
+}
+
+hr {
+    border-top: 1px solid var(--Lightgray);
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    color: var(--Coolgray);
+}
+
+.details h3 {
+    font-size: 22px;
+    color: var(--Purplishblue);
+}
+
+.details .details-price {
+    color: var(--Marineblue);
+}
+
+.add-on {
+    margin-top: 1em;
+}
+
+.total {
+    margin: 1.5em;
+}
+
+.container-summary li {
+    list-style: none;
+}

@@ -1,0 +1,46 @@
+.navigations {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--White);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navigations button {
+     font-weight: 600;
+     cursor: pointer;
+     z-index: 999;
+     position: absolute;
+}
+
+.goBack:hover {
+    color: var(--Marineblue);
+    transition: .4s ease;
+}
+
+.goBack {
+    background-color: var(--Alabaster);
+    color: var(--Coolgray);
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    left: 1em;
+}
+
+.nextStep {
+    background-color: var(--Marineblue);
+    color: var(--White);
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    right: 1em;
+}
+
+.nextStep:hover {
+    filter: opacity(80%) brightness(150%);
+    transition: .4s ease;
+}
